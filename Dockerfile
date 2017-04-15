@@ -10,5 +10,5 @@ RUN cd oc4j && \
     rm oc4j.zip
 COPY system-jazn-data.xml /oc4j/j2ee/home/config/system-jazn-data.xml
 VOLUME /oc4j
-WORKDIR /oc4j
-ENTRYPOINT ["./bin/oc4j", "-start"]
+WORKDIR /
+ENTRYPOINT ["./run.sh"]
