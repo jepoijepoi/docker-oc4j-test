@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+
+<jms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.oracle.com/technology/oracleas/schema/jms-server-10_1.xsd" schema-major-version="10" schema-minor-version="1">
+    <!-- configuration auto-generated [Tue Apr 11 14:42:06 UTC 2017] -->
+    <jms-server host="[ALL]" port="9127">
+
+
+
+        <!-- queues -->
+        <queue
+            name="Demo Queue"
+            location="jms/demoQueue"
+        >
+            <description>A dummy queue</description>
+        </queue>
+        <queue
+            name="collisionResult"
+            location="queue/collisionResult"
+            persistence-file="collisionResult"
+        >
+        </queue>
+        <queue
+            name="incomingCollisions"
+            location="queue/incomingCollisions"
+            persistence-file="incomingCollisions"
+        >
+        </queue>
+        <queue
+            name="jms/RAExceptionQueue"
+            location="jms/RAExceptionQueue"
+        >
+            <description>ResourceAdapter Exception Queue SYSTEM DESTINATION - DO NOT DELETE</description>
+        </queue>
+        <queue
+            name="roRequest"
+            location="queue/roRequest"
+            persistence-file="roRequest"
+        >
+        </queue>
+        <queue
+            name="roResponse"
+            location="queue/roResponse"
+            persistence-file="roResponse"
+        >
+        </queue>
+        <queue
+            name="roResponsePickup"
+            location="queue/roResponsePickup"
+            persistence-file="roResponsePickup"
+        >
+        </queue>
+
+
+        <!-- topics -->
+        <topic
+            name="Demo Topic"
+            location="jms/demoTopic"
+        >
+            <description>A dummy topic</description>
+        </topic>
+
+
+        <!-- unified connection factories -->
+
+
+        <!-- queue   connection factories -->
+
+
+        <!-- topic   connection factories -->
+
+
+        <!-- generic -->
+	<log>
+		<file path="../log/jms.log" />
+	</log>
+
+    </jms-server>
+</jms>
