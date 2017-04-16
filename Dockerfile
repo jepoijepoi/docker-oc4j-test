@@ -10,8 +10,8 @@ COPY run.sh /run.sh
 RUN cd oc4j && \
     unzip oc4j.zip && \
     rm oc4j.zip
-COPY /oc4j/config/system-jazn-data.xml /oc4j/j2ee/home/config/system-jazn-data.xml
-COPY /oc4j/config/jms.xml /oc4j/j2ee/home/config/jms.xml
+COPY oc4j/config/system-jazn-data.xml /oc4j/j2ee/home/config/system-jazn-data.xml
+COPY oc4j/config/jms.xml /oc4j/j2ee/home/config/jms.xml
 VOLUME /oc4j
 WORKDIR /
 ENTRYPOINT ["./run.sh"]
