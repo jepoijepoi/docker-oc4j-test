@@ -7,7 +7,8 @@ ENV APP_URL=''
 ENV OC4J_ADMIN_PASSWORD=''
 COPY oc4j_extended_101350.zip /oc4j/oc4j.zip
 COPY run.sh /run.sh
-RUN cd oc4j && \
+RUN apk add -U ttf-dejavu && \
+    cd oc4j && \
     unzip oc4j.zip && \
     rm oc4j.zip
 COPY oc4j/config/system-jazn-data.xml /oc4j/j2ee/home/config/system-jazn-data.xml
