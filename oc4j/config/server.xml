@@ -28,7 +28,7 @@
 	<log>
 		<file path="../log/server.log" />
 	</log>
-	<java-compiler name="javac" in-process="false" options="-J-Xmx1024m -encoding UTF8" extdirs="/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.131-2.6.9.0.el7_3.x86_64/jre/lib/ext:/usr/java/packages/lib/ext" />
+	<java-compiler name="javac" in-process="false" options="-J-Xmx1024m -encoding UTF8" extdirs="/usr/lib/jvm/default-jvm/jre/lib/ext:/usr/java/packages/lib/ext" />
 	<global-application name="default" path="application.xml" parent="system" start="true" />
 	<application name="javasso" path="../../home/applications/javasso.ear" parent="default" start="false" />
 	<application name="ascontrol" path="../../home/applications/ascontrol.ear" parent="system" start="true" />
