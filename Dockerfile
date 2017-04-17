@@ -3,7 +3,7 @@ RUN mkdir /oc4j
 ENV JAVA_HOME=/usr/lib/jvm/default-jvm
 ENV ORACLE_HOME=/oc4j
 ENV DS_CONFIG_URL=''
-ENV APP_URL=''
+ENV BITS_APP_URL=''
 ENV OC4J_ADMIN_PASSWORD=''
 COPY oc4j_extended_101350.zip /oc4j/oc4j.zip
 COPY run.sh /run.sh
