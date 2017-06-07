@@ -6,7 +6,7 @@ ENV ORACLE_HOME=/oc4j
 #ENV BITS_APP_URL=''
 #ENV OC4J_ADMIN_PASSWORD=''
 COPY oc4j_extended_101350.zip /oc4j/oc4j.zip
-#COPY run.sh /run.sh
+COPY run.sh /run.sh
 RUN apk add -U ttf-dejavu && \
     cd oc4j && \
     unzip oc4j.zip && \
@@ -19,4 +19,4 @@ COPY oc4j/config/jms.xml /oc4j/j2ee/home/config/jms.xml
 EXPOSE 8888
 VOLUME /oc4j
 WORKDIR /oc4j
-ENTRYPOINT ["./bin/oc4j","-start"]
+CMD ["/run.sh"]
