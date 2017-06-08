@@ -1,4 +1,5 @@
-FROM openjdk:7-alpine
+FROM anapsix/alpine-java:7_jdk
+#ROM openjdk:7-alpine
 RUN mkdir /oc4j
 ENV JAVA_HOME=/usr/lib/jvm/default-jvm
 ENV ORACLE_HOME=/oc4j
