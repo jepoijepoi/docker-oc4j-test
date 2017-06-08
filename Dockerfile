@@ -12,7 +12,7 @@ RUN apk add -U ttf-dejavu && \
     unzip oc4j.zip && \
     rm oc4j.zip
 COPY oc4j/config/system-jazn-data.xml /oc4j/j2ee/home/config/system-jazn-data.xml
-COPY oc4j/config/jms.xml /oc4j/j2ee/home/config/jms.xml
+#COPY oc4j/config/jms.xml /oc4j/j2ee/home/config/jms.xml
 #COPY oc4j/config/server.xml /oc4j/j2ee/home/config/server.xml
 #COPY oc4j/config/default-web-site.xml /oc4j/j2ee/home/config/default-web-site.xml
 #COPY oc4j/config/bits /oc4j/j2ee/home/config/bits
