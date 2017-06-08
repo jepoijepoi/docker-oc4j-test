@@ -1,7 +1,8 @@
 FROM anapsix/alpine-java:7_jdk
 #ROM openjdk:7-alpine
 RUN mkdir /oc4j
-ENV JAVA_HOME=/usr/lib/jvm/default-jvm
+#ENV JAVA_HOME=/usr/lib/jvm/default-jvm
+ENV JAVA_HOME=/opt/jdk
 ENV ORACLE_HOME=/oc4j
 #ENV DS_CONFIG_URL=''
 #ENV BITS_APP_URL=''
@@ -13,11 +14,11 @@ RUN apk add -U ttf-dejavu fontconfig && \
     unzip oc4j.zip && \
     rm oc4j.zip
 COPY oc4j/config/system-jazn-data.xml /oc4j/j2ee/home/config/system-jazn-data.xml
-#COPY oc4j/config/jms.xml /oc4j/j2ee/home/config/jms.xml
+COPY oc4j/config/jms.xml /oc4j/j2ee/home/config/jms.xml
 #COPY oc4j/config/server.xml /oc4j/j2ee/home/config/server.xml
 #COPY oc4j/config/default-web-site.xml /oc4j/j2ee/home/config/default-web-site.xml
 #COPY oc4j/config/bits /oc4j/j2ee/home/config/bits
 EXPOSE 8888
 VOLUME /oc4j
 WORKDIR /oc4j
-CMD ["/run.sh"]
+CMD ["/oc4j/bin/oc4j","-start"]

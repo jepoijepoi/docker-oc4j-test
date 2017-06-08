@@ -20,7 +20,7 @@
           <name>oc4jadmin</name>
           <display-name>OC4J Administrator</display-name>
           <description>OC4J Administrator</description>
-          <credentials>!${OC4J_ADMIN_PASSWORD}</credentials>
+          <credentials>!defaultOc4jPassword</credentials>
         </user>
         <user>
           <name>JtaAdmin</name>
