@@ -9,7 +9,7 @@ ENV ORACLE_HOME=/oc4j
 #ENV OC4J_ADMIN_PASSWORD=''
 COPY oc4j_extended_101350.zip /oc4j/oc4j.zip
 COPY run.sh /run.sh
-RUN yum install -Y unzip && \
+RUN yum install -y unzip && \
     cd oc4j && \
     unzip oc4j.zip && \
     rm oc4j.zip
