@@ -1,5 +1,5 @@
-FROM nimmis/java-centos:oracle-7-jdk
-#FROM anapsix/alpine-java:7_jdk
+#FROM nimmis/java-centos:oracle-7-jdk
+FROM anapsix/alpine-java:7_jdk
 RUN mkdir /oc4j
 #ENV JAVA_HOME=/opt/jdk
 ENV JAVA_HOME=/usr/java/default
