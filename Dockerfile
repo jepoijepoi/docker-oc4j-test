@@ -20,7 +20,7 @@ RUN yum install -y unzip && \
 COPY oc4j/config/system-jazn-data.xml /oc4j/j2ee/home/config/system-jazn-data.xml
 COPY oc4j/config/jms.xml /oc4j/j2ee/home/config/jms.xml
 COPY oc4j/config/data-sources.xml /oc4j/j2ee/home/config/data-sources.xml
-COPY oc4j/applications/bits.ear /oc4j/j2ee/home/applications/bits.ear
+COPY oc4j/applications/bits.ear /oc4j/j2ee/home/bits.ear
 
 COPY oc4j/config/server.xml /oc4j/j2ee/home/config/server.xml
 COPY oc4j/config/default-web-site.xml /oc4j/j2ee/home/config/default-web-site.xml
