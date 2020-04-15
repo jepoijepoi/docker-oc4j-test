@@ -32,7 +32,7 @@
 	<global-application name="default" path="application.xml" parent="system" start="true" />
 	<application name="javasso" path="../../home/applications/javasso.ear" parent="default" start="false" />
 	<application name="ascontrol" path="../../home/applications/ascontrol.ear" parent="system" start="true" />
-	<application name="bits" path="../applications/bits.ear" parent="default" start="true" />
+	<application name="bits" path="../../home/applications/bits.ear" parent="default" start="true" />
 	<global-web-app-config path="global-web-application.xml" />
 	<transaction-manager-config path="transaction-manager.xml" />
 	<web-site default="true" path="./default-web-site.xml" />
