@@ -323,7 +323,7 @@
       </login-module>
     </login-modules>
   </application>
-<!--   <application>
+  <application>
     <name>bits</name>
     <login-modules>
       <login-module>
@@ -338,7 +338,6 @@
       </login-module>
     </login-modules>
   </application>
- -->  
 	<application>
     <name>oracle.security.jazn.tools.Admintool</name>
     <login-modules>
