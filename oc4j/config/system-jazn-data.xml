@@ -331,9 +331,9 @@
         <control-flag>required</control-flag>
         <options>
           <option>
-	    <name>jndiName</name>
-	    <value>jdbc/BitsCalgaryDS</value>
-	  </option>
+			<name>jndiName</name>
+			<value>jdbc/BitsCalgaryDS</value>
+		  </option>
         </options>
       </login-module>
     </login-modules>
