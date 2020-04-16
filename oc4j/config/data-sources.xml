@@ -21,21 +21,22 @@
 	<managed-data-source
 		user="bits_owner"
 		login-timeout="30"
-		connection-pool-name="BitsDataSourceConnectionPool"
+		connection-pool-name="BITSDataSourceConnectionPool"
 		jndi-name="jdbc/BitsCalgaryDS"
 		name="BITSDataSource"
 	/>
 	
-	<connection-pool name="BitsDataSourceConnectionPool" abandoned-connection-timeout="30" connection-retry-interval="3" max-connections="32" property-check-interval="30" time-to-live-timeout="300" used-connection-wait-timeout="30" validate-connection="true">
+	<connection-pool name="BITSDataSourceConnectionPool" abandoned-connection-timeout="30" connection-retry-interval="3" max-connections="32" property-check-interval="30" time-to-live-timeout="300" used-connection-wait-timeout="30" validate-connection="true">
 		<connection-factory
 			factory-class="oracle.jdbc.pool.OracleDataSource"
 			user="bits_owner"
 			password="bits_owner"
-			url="jdbc:oracle:thin:@bitsdb.ho.cpa:1521:cnbitsua"
+			url="jdbc:oracle:thin:@do-corp-proxy01.do.cpa:11521:cnbitsua"
 			commit-record-table-name=""
 		/>
 	</connection-pool>
 <!--url="jdbc:oracle:thin:@do-corp-proxy01.do.cpa:11521:cnbitsua"-->
+<!--url="jdbc:oracle:thin:@uat.db.ho:1521:cnbitsua"-->
   <!--
   <managed-data-source name='NonEmulatedDS'
     connection-pool-name='NonEmulated Connection Pool'
