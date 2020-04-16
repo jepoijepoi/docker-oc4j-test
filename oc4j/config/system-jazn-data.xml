@@ -323,7 +323,6 @@
       </login-module>
     </login-modules>
   </application>
-  <!--
   <application>
     <name>bits</name>
     <login-modules>
@@ -332,14 +331,13 @@
         <control-flag>required</control-flag>
         <options>
           <option>
-			<name>jndiName</name>
-			<value>jdbc/BitsCalgaryDS</value>
-		  </option>
+	    <name>jndiName</name>
+	    <value>jdbc/BitsCalgaryDS</value>
+	  </option>
         </options>
       </login-module>
     </login-modules>
   </application>
-  -->
   <application>
     <name>oracle.security.jazn.tools.Admintool</name>
     <login-modules>
