@@ -169,7 +169,7 @@
 		<priority value="INFO" />
 	</category>
 	<category name="org.hibernate.SQL">
-		<priority value="DEBUG" />
+		<priority value="INFO" />
 	</category>
 
 	<!-- Ehcache -->
