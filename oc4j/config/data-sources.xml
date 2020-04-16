@@ -31,7 +31,7 @@
 			factory-class="oracle.jdbc.pool.OracleDataSource"
 			user="bits_owner"
 			password="bits_owner"
-			url="jdbc:oracle:thin:@bitsdb.ho.cpa:1521/cnbitsua"
+			url="jdbc:oracle:thin:@bitsdb.ho.cpa:1521:cnbitsua"
 			commit-record-table-name=""
 		/>
 	</connection-pool>
