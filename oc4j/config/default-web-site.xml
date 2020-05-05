@@ -9,5 +9,6 @@
 	<web-app application="javasso" name="javasso-web" root="/jsso" />
 	<web-app application="ascontrol" name="ascontrol" load-on-startup="true" root="/em" ohs-routing="false" />
 	<web-app application="bits" name="bits" load-on-startup="true" root="/bits" />
+	<web-app application="bits" name="parkplus" load-on-startup="true" root="/parkplus" />
 	<access-log path="../log/default-web-access.log" split="day" />
 </web-site>
