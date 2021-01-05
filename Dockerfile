@@ -24,6 +24,8 @@ COPY oc4j/applications/bits.ear /oc4j/j2ee/home/bits.ear
 COPY oc4j/applications/bits.ear /oc4j/j2ee/home/applications/bits.ear
 
 COPY oc4j/config/server.xml /oc4j/j2ee/home/config/server.xml
+COPY oc4j/config/amazon_s3.cer /oc4j/j2ee/home/config/amazon_s3.cer
+COPY oc4j/config/s3_console_aws_amazon.cer /oc4j/j2ee/home/config/s3_console_aws_amazon.cer
 COPY oc4j/config/default-web-site.xml /oc4j/j2ee/home/config/default-web-site.xml
 COPY oc4j/config/bits /oc4j/j2ee/home/config/bits
 EXPOSE 8888
